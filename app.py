@@ -9,10 +9,10 @@ import threading
 app = Flask(__name__)
 
 # =========================
-# PRINCE - MOHIT BANKING
+# PRINCE BANKING
 # =========================
 
-app.secret_key = "prince-mohit-banking-demo-key"
+app.secret_key = "prince-banking-demo-key"
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_FILE = os.path.join(BASE_DIR, "bank_data.json")
@@ -60,7 +60,7 @@ def create_database():
         "users": [
             {
                 "account_no": "ADMIN001",
-                "name": "Prince - Mohit Banking Admin",
+                "name": "Prince Banking Admin",
                 "email": "admin@princemohitbanking.com",
                 "phone": "",
                 "account_type": "Admin",
